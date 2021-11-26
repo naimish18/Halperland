@@ -111,6 +111,12 @@ h6{
 }
 
 @media screen and (max-width:992px) {
+    #arrow{
+        display: none;
+    }
+    #step_img{
+        margin-left: 15px;
+    }
     #group_img{
         width: 90%!important;
     }
@@ -121,6 +127,9 @@ h6{
 }
 
 @media screen and (max-width:766px){
+    #arrow{
+        display: none;
+    }
     .heading{
         margin-top: 4rem!important;
         padding: 0;
@@ -155,4 +164,29 @@ h6{
     #footer_icons{
         margin: 10px auto;
     }
+}
+
+/* FAQ Stle */
+
+.faq_header{
+    background-color: gray;
+    background-size: cover;
+}
+.faq_li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.faq_li li{
+    display: inline-block;
+}
+.faq_li li a{
+    padding: 5px 10px;
+    margin: 10px 3px;
+    color: white;
+    display: block;
+}
+#faq_banner{
+    padding: 0;
+    width: 100%;
 }
