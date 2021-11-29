@@ -166,7 +166,7 @@ h6{
     }
 }
 
-/* FAQ Stle */
+/* FAQ Style */
 
 .faq_header{
     background-color: gray;
@@ -176,6 +176,7 @@ h6{
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .faq_li li{
     display: inline-block;
@@ -189,4 +190,90 @@ h6{
 #faq_banner{
     padding: 0;
     width: 100%;
+}
+#faq_nav_btn{
+    height: 40px;
+    text-align: center;
+}
+#faq_title::after{
+    position: absolute;
+    background:#29626D;
+    opacity: 50%;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    left: 50%;
+    margin-top: 27px;
+    margin-left: -100px;
+}
+#faq_title_img{
+    padding: 0px 10px;
+    width: 44px;
+    height: 25px;
+    position:absolute;
+    display: block;
+    margin: 0px auto;
+    left: 50%;
+    margin-left: -22px;
+    background:white;
+}
+#faq_logo{
+    display: block;
+    width: fit-content;
+}
+#faq_customer_btn,#faq_service_btn{
+    border-bottom: 2px solid #29626D;
+    text-align: center;
+    display: block;
+}
+#faq_customer_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29626D;
+    color: white;
+    height: 100%;
+    
+}
+#faq_service_btn{
+    background-color: #F6F6F6;
+    color: black;
+}
+#faq_main_content{
+    width: 70%;
+}
+.faq_arrow_img{
+    width: 22px;
+    height: 22px;
+}
+.faq_collapse_content{
+    font-size: 16px;
+    margin-top: 18px;
+    margin-left: 37px;
+}
+.faq_collapse_box{
+    margin-top: 10px;
+}
+@media screen and (max-width:1026px) and (min-width:993px){
+
+}
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:766px){
+    #faq_logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faq_li{
+        margin-top: 10px;
+    }
+    #faq_main_content{
+        width: 100%;
+    }
+    
+
 }
