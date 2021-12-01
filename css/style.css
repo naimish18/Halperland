@@ -89,6 +89,13 @@ h6{
 #group_text{
     margin-left: -75px;
 }
+.home_nav_items{
+    margin-top: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 @media screen and (max-width:1026px) and (min-width:993px){
     .heading{
@@ -168,25 +175,35 @@ h6{
 
 /* FAQ Style */
 
-.faq_header{
-    background-color: gray;
-    background-size: cover;
+#faqnav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #757575;
+    padding: 0!important;
+    /* font-size: 0.7rem!important; */
 }
-.faq_li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#faqnav .nav-item{
+    margin: auto 0;
 }
-.faq_li li{
-    display: inline-block;
+
+#faqnav .nav-item .rounded-pill{
+    border: 1px solid white;
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: auto 5px;
+
 }
-.faq_li li a{
-    padding: 5px 10px;
-    margin: 10px 3px;
-    color: white;
-    display: block;
+#logo-faq{
+    height: 54px;
+    margin: 6px 0 4px 15px;
 }
+.greenlink{
+    background-color:#29626D;
+}
+
 #faq_banner{
     padding: 0;
     width: 100%;
@@ -194,6 +211,8 @@ h6{
 #faq_nav_btn{
     height: 40px;
     text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
 }
 #faq_title::after{
     position: absolute;
@@ -260,15 +279,19 @@ h6{
 }
 
 @media screen and (max-width:992px) {
-    
+    #faqnav .nav-item{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:766px){
-    #faq_logo{
+    #faqnav .nav-item{
+        width: fit-content;
         margin-left: auto;
         margin-right: auto;
-    }
-    .faq_li{
         margin-top: 10px;
     }
     #faq_main_content{
@@ -276,4 +299,254 @@ h6{
     }
     
 
+}
+
+/* Prices Style */
+
+#price_box{
+    margin-top: 83px;
+    display: block;
+    width: 553px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #B0C9CE;
+    margin-bottom: 20px;
+}
+#price_box_title{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #1D7A8C;
+}
+#price_box_sub_txt{
+    margin-top: 18px;
+    font-family: 'Roboto';
+    font-size: 48px;
+    text-align: center;
+}
+#price_sub_box{
+    margin-top: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price_sub_sub_box{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+.price_sub_img{
+    width: 24px;
+    height: 24px;
+}
+.price_sub_img_txt{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+}
+#price_service_box{
+    width: 1140px;
+    border-top: 1px solid #DCDCDC;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 46px;
+}
+.price_service_main{
+    margin-top: 73px;
+    margin-left: 108px;
+    margin-right: 108px;
+}
+#price_service_sub_box{
+    width: 108px;
+    height: 108px;
+    border: 1px solid #B0C9CE;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_img1{
+    padding: 30px 35px 30px 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_img2{
+    padding: 26px 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_img3{
+    padding: 38px 28px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_img4{
+    padding: 31px 34px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_img5{
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#price_service_box_txt1{
+    text-align: center;
+    margin: 14px 0px 0px 0px;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;   
+    padding: 0px;
+}
+#price_service_box_txt2{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: #1D7A8C;
+    margin-top: 5px 0px 0px 0px;
+    padding-bottom: 0px;
+}
+#price_include{
+    background-color: #F6F6F6;
+    margin-bottom: 60px;
+}
+.price_include_card{
+    margin-top: 75px;
+}
+#price_include_img{
+    width: 100%;    
+    height: 210px;
+}
+#price_include_title{
+    color: #4F4F4F;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.price_include_txt{
+    margin-top: 14px;
+}
+.price_include_sub_txt{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    columns: #4F4F4F;
+}
+#price_title::after{
+    position: absolute;
+    background:#29626D;
+    opacity: 50%;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    left: 50%;
+    margin-top: 27px;
+    margin-left: -100px;
+}
+#price_title_img{
+    padding: 0px 10px;
+    width: 44px;
+    height: 25px;
+    position:absolute;
+    display: block;
+    margin: 0px auto;
+    left: 50%;
+    margin-left: -22px;
+    background:#F6F6F6;
+}
+#price_why_halper_title1{
+    color: #646464;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+#price_why_halper_txt1{
+    color: #646464;
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Roboto',sans-serif;
+}
+#price_why_halper_title2{
+    color: #646464;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+#price_why_halper_txt2{
+    color: #646464;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+}
+
+@media screen and (max-width:1026px) and (min-width:993px){
+    #price_box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #price_service_box{
+        width: 100%;
+    }
+    #price_box{
+        width: 100%;
+    }
+    #price_why_halper_txt1{
+        text-align: center;
+    }
+    #price_why_halper_title1{
+        text-align: center;
+    }
+    #price_why_halper_txt2{
+        text-align: center;
+    }
+    #price_why_halper_title2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:766px){
+    #price_box{
+        width: 100%;
+    }
+    #price_service_box{
+        width: 100%;
+    }
+    #price_box{
+        width: 100%;
+    }
+    .price_menu{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #price_include_img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 360px;
+    }
+    .price_main_include{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+@media screen and (max-width:390px) {
+    #price_include_img{
+        width: 100%;
+    }
+}
 }
