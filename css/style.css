@@ -550,3 +550,154 @@ h6{
     }
 }
 }
+
+/* Contact Style */
+
+#contact_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact_txt{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    color: #4F4F4F;
+    text-align: center;
+}
+#f_name,#l_name{
+    display: inline;
+    width: 300px;
+    height: 46px;
+}
+#l_name{
+    margin-left: 14px;
+}
+#phone_num{
+    display: inline;
+    width: 250px;
+    height: 46px;
+}
+#phone_num_div{
+    display: inline;
+}
+#email{
+    display: inline;
+    width: 300px;
+    height: 46px;
+    margin-left: 14px;
+}
+#subject_menu{
+    width: 620px;
+    height: 46px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#message{
+    width: 620px;
+    height: 146px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#message::placeholder{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+#form_sub_div{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+#submit_btn{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+#map{
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width:1026px) and (min-width:993px){
+    
+}
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:768px){
+    .contact_card{
+        border: 1px solid #d4d4d4;
+        margin-top: 10px;
+    }
+    #f_name,#l_name{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #phone_num_div,#email{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #subject_menu{
+        width: 300px;
+    }
+    #message{
+        width: 300px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:390px) {
+    #f_name,#l_name{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #phone_num_div,#email{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #subject_menu{
+        width: 300px;
+
+    }
+    #message{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+/*  About Style */
+
+#about_para{
+    font-size: 16px;
+    color: #646464;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
