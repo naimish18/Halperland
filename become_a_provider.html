@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become A Provider</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5602f8a8c9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header1">
+        <nav class="navbar navbar-expand-lg">
+                  
+          <a class="navbar-brand ms-3" href="index.html"><img src="images/logo-large.png"  alt=""></a>
+          <button style="color:white; margin-right: 15px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link active border  border-1 rounded-pill  nav-padding" aria-current="page" href="#" style="width: 161px;height: 40px;text-align: center;">Book a Cleaner</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link nav-padding" href="prices.html">Prices</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link nav-padding" href="#">Our Guarantee</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link nav-padding" href="#">Blog</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link border border-1 rounded-pill  nav-padding" href="#" style="width: 97px;height: 40px;text-align: center;">Login</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="home_nav_items nav-link border border-1 rounded-pill nav-padding" href="#" style="width: 161px;height: 40px;text-align: center;">Become a Helper</a>
+              </li>
+              <li class="home_nav_items nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img style="vertical-align: baseline;" src="images/ic-flag.png" alt="" style="width: 25px;height: 16px;">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" >
+                  <li><a class="dropdown-item" href="#"><img src="images/ic-flag.png" alt=""> <span>U.K.</span> </a></li>
+                </ul>
+              </li>
+            </ul>
+          
+            </div>
+        </nav>
+
+        <div id="bac_register">
+            <h2 style="text-align: center;padding-top: 20px;padding-bottom: 10px;">Register Now!</h2>
+            <input type="text" class="form-control" id="bac_f_name" placeholder="First name">
+            <input type="text" class="form-control" id="bac_l_name" placeholder="Last name">
+            <input type="email" class="form-control" name="" id="bac_email" placeholder="Email address">
+            <div id="bac_phone_div">
+                <div style="width: fit-content;display: inline">
+                  <select name="" id="bac_ph_select" style="appearance: none;width: 50px;height: 46px;text-align: center;background-color: #F3F3F3;border: 1px solid #C8C8C8;">
+                    <option value="48">+48</option>
+                    <option value="91">+91</option>
+                  </select>
+                </div>
+                <div style="width: fit-content;display: inline;margin-left: -5px;">
+                  <input type="tel" class="form-control" name="" id="bac_phone_num" placeholder="Mobile number">
+                </div>
+            </div>
+            <input type="password" class="form-control" id="bac_password" placeholder="Password">
+            <input type="password" class="form-control" id="bac_conf_password" placeholder="Confirm Password">
+            <div class="form-check" id="bac_check">
+                <input class="form-check-input" type="checkbox" value="" id="send_news">
+                <label class="send_news" for="flexCheckDefault" style="color: black;">
+                    Send me newsletters from Helperland
+                </label>
+            </div>
+            <div class="form-check" id="bac_check">
+                <input class="form-check-input" type="checkbox" value="" id="bac_t_and_c">
+                <label class="bac_tand_c" for="flexCheckChecked" style="color: black;">
+                    I accept terms and <a href="" style="color: #1FB6FF;">conditions & privacy policy</a>
+                </label>
+            </div>
+            <div class="d-flex align-items-center" id="bac_robot_div">
+                <div class="form-check" id="bac_check" style="display: block;margin-left: 0px;width: fit-content;">
+                    <input class="form-check-input" type="checkbox" value="" id="not_robot">
+                    <label class="not_robot" for="flexCheckDefault" style="color: black;">
+                        i'm not a robot
+                    </label>
+                </div>
+                <div>
+                    <img src="images/re_captcha.png" alt="" style="height: 60px;width: 60px;">
+                </div>
+            </div>
+            <button type="submit" id="get_started_btn" class="btn rounded-pill" style="background-color: #29626D;"> Get Started <img src="images/arrow-white.png" alt=""></button>
+        </div>
+        <a href="#bac_section2"><img src="images/group-18_5.png" alt="" style="width: 40px;height: 40px;margin-top: 40px;display: block;margin-left: auto;margin-right: auto;"></a>
+    </header>
+    
+    <div style="position: relative; margin-left: 0;margin-right: 0;">
+        <div style="position:absolute; left:0; z-index: -1;">
+            <img src="images/blog-left-bg.png" alt="">
+        </div>
+
+        <section id="bac_section2">
+            <h2 id="bac_sec2_title">How it works</h2>    
+            <div class="container" style="margin-top: 60px;">
+                <div class="row d-flex flex-wrap align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
+                    <div id="bac_card1" class="col-lg-4">
+                        <h3 class="bac_work_subtitle">Register yourself</h3>
+                        <h4 class="bac_work_para" style="margin-bottom: 40px;">Provide your basic information to register yourself as a service provider.</h4>
+                        <a href="" class="bac_work_para">Read more <img src="images/shape-2.png" alt=""></a>
+                    </div>
+                    <div id="bac_img1" class="col-lg-4">
+                        <img src="images/group-18@2x.png" alt="" style="width: 260px;height: 260px;display: block;margin-left: auto;margin-right: auto;">
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center" style="margin-top: 30px;">
+                    <div class="col-lg-4">
+                        <img src="images/group-18@3x.png" alt="" style="width: 260px;height: 260px;display: block;margin-left: auto;margin-right: auto;">
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="bac_work_subtitle">Get service requests</h3>
+                        <h4 class="bac_work_para" style="margin-bottom: 40px;">You will get service requests from
+                            customes depend on service area and profile.</h4>
+                        <a href="" class="bac_work_para">Read more <img src="images/shape-2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center" style="margin-top: 30px;">
+                    <div id="bac_card1" class="col-lg-4">
+                        <h3 class="bac_work_subtitle">Complete service</h3>
+                        <h4 class="bac_work_para" style="margin-bottom: 40px;">Accept service requests from your customers
+                            and complete your work.</h4>
+                        <a href="" class="bac_work_para">Read more <img src="images/shape-2.png" alt=""></a>
+                    </div>
+                    <div id="bac_img1" class="col-lg-4">
+                        <img src="images/group-18_2x.png" alt="" style="width: 260px;height: 260px;display: block;margin-left: auto;margin-right: auto;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div style="position:absolute; right:0; top: 0px; z-index: -1;">
+            <img src="images/blog-right-bg.png" alt="">
+        </div>
+    </div>
+
+    <div style="position: relative;margin-top: 50px;" >
+        <div class="text-center my-4">
+            <h4 class="mb-3">GET OUR NEWSLETTER</h4>
+            <form action="">
+            <input type="text" name="email" placeholder="YOUR EMAIL" class="rounded-pill px-3" style="border: 1px solid gray;width: 233px;height: 40px;">
+            <input type="submit" name="submit" class="rounded-pill border border-0 px-3" id="" style="width: 80px;height: 40px;background-color: #ff7b6d; padding-top: 3px; padding-bottom: 3px;  color: #ffffff;">
+            </form>
+        </div>    
+    </div>   
+    
+    <footer style="background-color: #111111;margin-top: 50px;">
+      
+        <div class="container d-flex justify-content-between flex-wrap align-items-center py-3" >
+        
+        <div id="footer_logo">
+        <img width="100px" src="images/logo-small.png" alt="">
+        </div>
+        
+        <div class="d-flex flex-wrap text-center justify-content-center" style="color: white;">
+        <a class="px-3" href="index.html">HOME</a>
+        <a class="px-3" href="about.html">ABOUT</a>
+        <a class="px-3" href="#">TESTIMONIALS</a>
+        <a class="px-3" href="faq.html">FAQS</a>
+        <a class="px-3" href="#">INSURRANCE POLICY</a>
+        <a class="px-3" href="#">IMPRESSUM</a>
+        </div>
+        
+        <div id="footer_icons">
+        <a class="px-2" href="#"><img src="images/ic-facebook.png" alt=""></i></a>
+        
+        <a class="px-2" href="#"><img src="images/ic-instagram.png" alt=""></i></a>
+        </div>
+        </div>
+  
+        <div class="container" style="height: 2px;background-color: #3D3D3D;"></div>
+  
+        <div class="d-flex flex-wrap text-center justify-content-center" style="color: #9BA0A3;font-size: 14px;margin-top: 22px;">
+          <p>©2018 Helperland. All rights reserved.</p>
+          <p> Terms and Conditions | Privacy Policy</p>
+        </div>
+        
+      </footer>
+
+    <script src="/js/jquery.3.6.0.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
