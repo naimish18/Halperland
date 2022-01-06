@@ -870,6 +870,7 @@ h2{
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #action_col{
     padding-left: 50px;
@@ -1026,7 +1027,10 @@ h2{
     text-align: left;
     padding-left: 22px;
 }
-
+#sh_feedback_input{
+    width: 500px;
+    height: 100px;
+}
 @media screen and (max-width:992px) {
     #sh_item2{
         padding-left: 7%;
@@ -1048,6 +1052,10 @@ h2{
     #payment{
         z-index: -1;
     }
+    #sh_feedback_input{
+        width: 100%;
+    }
 } 
 @media screen and (max-width:390px) {
+   
 }
