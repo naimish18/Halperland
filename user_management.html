@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5602f8a8c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="admin_header">
+        <div class="d-flex align-items-center justify-content-between">
+            <div id="um_ss_dropdowm">
+                <div class="btn-group dropleft" style="z-index: 2;">
+                    <button id="ups_ss_dropdown_icon" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #1FB6FF;border: 0px;">
+                        <img src="images/menu_icon.png" alt="" style="width: 30px;height: 25px;">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left" style="z-index: 2;">
+                        <a href="service_request.html" class="um_fs_sidebar_items">Service Requests</a>
+                        <a href="#" class="um_fs_sidebar_items" style="color: #1fb6ff;">User Management</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><h1 style="font-family: 'SwitzeraADF',sans-serif;padding: 10px 15px;margin: 0px;color: #FFFFFF;font-size: 38px;">helperland</h1></a>
+            </div>
+            <div style="font-size: 16px;font-family: 'Roboto',sans-serif;color: #FFFFFF;">
+                <img src="images/admin-user.png" alt="" style="margin-right: 7px;">
+                James Smith
+                <a href="#" style="margin: 0px 18px;"><img src="images/logout.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="um_main_content" class="d-flex">
+            <div id="um_fs_sidebar">
+                <a href="service_request.html" class="um_fs_sidebar_items">Service Requests</a>
+                <a href="#" class="um_fs_sidebar_items" style="color: #1fb6ff;">User Management</a>
+            </div>
+            <div id="um_sub_content">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2>User Management </h2>
+                    <a href="#" class="d-flex " style="background-color: #1FB6FF;padding: 10px;color: #FFFFFF;border-radius: 4px;"><img src="images/add.png" alt="" style="width: 16px;height: 16px;margin-right: 7px;margin-top: 2px;"> Add New User</a>
+                </div>
+                <div style="background-color: #FFFFFF;border-bottom: 20px solid #FFFFFF;">
+                    <form action="">
+                        <select name="um_uname" id="um_umame" class="um_form_ele">
+                            <option selected disabled>User Name</option>
+                            
+                        </select>
+                        <select name="um_utype" id="um_utype" class="um_form_ele">
+                            <option selected disabled>User role</option>
+                            <option value="admin">Admin</option>
+                            <option value="call_center">Call Center</option>
+                            <option value="customer">Customer</option>
+                            <option value="service_provider">Service Provider</option>
+                        </select>
+                        <div style="display: inline;" class="um_form_ele">
+                            <div style="width: fit-content;display: inline">
+                              <select name="" id="" style="appearance: none;width: 45px;height: 46px;text-align: center;background-color: #F3F3F3;border: 1px solid #C8C8C8;border-radius: 0;">
+                                <option value="48">+48</option>
+                                <option value="91">+91</option>
+                              </select>
+                            </div>
+                            <div style="width: fit-145px;display: inline;margin-left: -4px;">
+                              <input type="tel" class="um_form_ele" name="" id="" placeholder="Mobile number" style="margin-left: 0px;height: 46px;width: 150px;">
+                            </div>
+                        </div>
+                        <input class="um_form_ele" type="text" placeholder="Postal code" style="width: 135px;height: 46px;">
+                        <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  From Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
+                        <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  To Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
+                        <input class="um_form_ele" type="submit" value="Search" style="width: 84px;height: 46px;background-color:#1FB6FF;border: 0;border-radius: 4px;color: #FFFFFF;">
+                        <input class="um_form_ele" type="reset" value="Clear" style="background-color: #FFFFFF;width: 84px;height: 46px;border: 1px solid #DEDDDD;border-radius: 4px;">
+                    
+                    </form>
+                </div>
+                <div style="margin-top: 20px;text-align: right;">
+                    <a href="#" style="font-family: 'Roboto',sans-serif;background-color: #1FB6FF;color: #FFFFFF;padding: 10px;font-size: 16px;border-radius: 4px;">Export</a>
+                </div>
+                <div style="margin-top: 20px;margin-left: 15px;margin-right: 15px;">
+
+                    <div class="row" style="background-color: #F9F9F9;border: 1px solid #E1E1E1">
+                        <div id="um_sub_header" class="col-2">User Name</div>
+                        <div id="um_sub_header" class="col-1">Role</div>
+                        <div id="um_sub_header" class="col-2">Date of Registration</div>
+                        <div id="um_sub_header" class="col-2">User Type</div>
+                        <div id="um_sub_header" class="col-1">Phone</div>
+                        <div id="um_sub_header" class="col-2">Postal code</div>
+                        <div id="um_sub_header" class="col-1">Status</div>
+                        <div id="um_sub_header" class="col-1">Action</div>
+                    </div>
+                    <div class="row" style="background-color: #FFFFFF;border: 1px solid #E1E1E1;">
+                        <div id="um_sub_items" class="col-2">Demo Test</div>
+                        <div id="um_sub_items" class="col-1"></div>
+                        <div id="um_sub_items" class="col-2"><img src="images/calendar2.png" alt="" style="margin-right: 5px;"><b>13/03/2020</b></div>
+                        <div id="um_sub_items" class="col-2">Customer</div>
+                        <div id="um_sub_items" class="col-1">12345</div>
+                        <div id="um_sub_items" class="col-2">999955</div>
+                        <div id="um_sub_items" class="col-1"><a href="#" style="background-color: #67B644;padding: 5px 11px;color: #FFFFFF;">Active</a></div>
+                        <div id="um_sub_items" class="col-1">
+                            <div id="ups_fs_dropdown" class="dropdown">
+                                <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #FFFFFF;">
+                                    <img src="images/group-38.png" alt="" >
+            
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Edit</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Deactivate</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Service History</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="border: 1px solid #e1e1e1;background-color: #FFFFFF;">
+                        <div id="um_sub_items" class="d-flex col-6">
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;">show</h4> 
+                            <form class="d-flex align-items-center" action="/action_page.php" style="margin-left: 5px;">
+                                <select name="show_entery" id="show_entery" style="padding: 10px;border-radius: 5px;font-size: 14px;">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                </select>
+                            </form>
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;margin-left: 10px;">Entries</h4> 
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-end" >
+                            <a href="#"><img src="images/first-page.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px;margin: 0px 5px;"></a>
+                            <a href="#"><img src="images/keyboard-right-arrow-button-copy.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px 11px;"></a>
+                            <a href="#" style="color: #FFFFFF;background-color: #565656;padding: 6px 12px;margin: 0px 5px;">1</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">2</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">3</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">4</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">5</a>
+                            <a href="#"><img src="images/keyboard-right-arrow-button-copy.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px 11px;transform: rotate(180deg);"></a>
+                            <a href="#"><img src="images/first-page.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px;margin: 0px 5px;transform: rotate(180deg);"></a>
+                        </div>
+                    </div>
+                    <div class=".row" style="margin-left: -15px; margin-top: 25px;margin-bottom: 25px;font-size: 14px;font-family: 'Roboto',sans-serif;">
+                        ©2018 Helperland. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
