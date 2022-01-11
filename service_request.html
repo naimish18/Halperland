@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Requests</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5602f8a8c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="admin_header">
+        <div class="d-flex align-items-center justify-content-between">
+            <div id="um_ss_dropdowm">
+                <div class="btn-group dropleft" style="z-index: 2;">
+                    <button id="ups_ss_dropdown_icon" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #1FB6FF;border: 0px;">
+                        <img src="images/menu_icon.png" alt="" style="width: 30px;height: 25px;">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left" style="z-index: 2;">
+                        <a href="#" class="um_fs_sidebar_items" style="color: #1fb6ff;">Service Requests</a>
+                        <a href="user_management.html" class="um_fs_sidebar_items">User Management</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><h1 style="font-family: 'SwitzeraADF',sans-serif;padding: 10px 15px;margin: 0px;color: #FFFFFF;font-size: 38px;">helperland</h1></a>
+            </div>
+            <div style="font-size: 16px;font-family: 'Roboto',sans-serif;color: #FFFFFF;">
+                <img src="images/admin-user.png" alt="" style="margin-right: 7px;">
+                James Smith
+                <a href="#" style="margin: 0px 18px;"><img src="images/logout.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="um_main_content" class="d-flex">
+            <div id="um_fs_sidebar">
+                <a href="#" class="um_fs_sidebar_items" style="color: #1fb6ff;">Service Requests</a>
+                <a href="user_management.html" class="um_fs_sidebar_items">User Management</a>
+            </div>
+            <div id="um_sub_content">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2>Service Requests</h2>
+                    <a href="#" class="d-flex " style="background-color: #1FB6FF;padding: 10px;color: #FFFFFF;border-radius: 4px;"><img src="images/add.png" alt="" style="width: 16px;height: 16px;margin-right: 7px;margin-top: 2px;"> Add New User</a>
+                </div>
+                <div style="background-color: #FFFFFF;border-bottom: 20px solid #FFFFFF;">
+                    <form action="">
+                        <input type="text" class="um_form_ele" name="" id="sr_sid" placeholder="Service ID">
+                        <input class="um_form_ele" type="text" placeholder="Postal code" style="width: 135px;height: 46px;">
+                        <input type="email" class="um_form_ele" name="" id="sr_email" placeholder="Email">
+                        <select name="" id="sr_customer" class="um_form_ele" >
+                            <option selected disabled>Select Customer</option>
+                        </select>
+                        <select name="" id="sr_sprovider" class="um_form_ele" >
+                            <option selected disabled>Select Service Provider</option>
+                        </select>
+                        <select name="" id="sr_status" class="um_form_ele" >
+                            <option selected disabled>Select Status</option>
+                            <option value="admin">New</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                            <option value="cancelled">Calcelled</option>
+                            <option value="refunded">Refunded</option>
+                            <option value="expired">Expired</option>
+                            <option value="resheduled">Resheduled</option>
+                        </select>
+                        <select name="" id="sr_payment_status" class="um_form_ele" >
+                            <option selected disabled>SP payment status</option>
+                        </select>
+                        <select name="" id="sr_pstatus" class="um_form_ele" >
+                            <option selected disabled>Select Status</option>
+                            <option value="all">All</option>
+                            <option value="pending_penalty">Pending Penalty</option>
+                            <option value="pending_commmision">Pending Commision</option>
+                        </select>
+                        <input type="checkbox" class="um_form_ele" id="has_issue" name="remember_me" style="height: 15px;width: 15px;">
+                        <label for="has_issue" style="color: #111111; margin-left: 5px;">Has Issue</label>
+                        
+                        <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  From Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
+                        <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  To Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
+                        <input class="um_form_ele" type="submit" value="Search" style="width: 84px;height: 46px;background-color:#1FB6FF;border: 0;border-radius: 4px;color: #FFFFFF;">
+                        <input class="um_form_ele" type="reset" value="Clear" style="background-color: #FFFFFF;width: 84px;height: 46px;border: 1px solid #DEDDDD;border-radius: 4px;">
+                    
+                    </form>
+                </div>
+                <div style="margin-top: 20px;text-align: right;">
+                    <a href="#" style="font-family: 'Roboto',sans-serif;background-color: #1FB6FF;color: #FFFFFF;padding: 10px;font-size: 16px;border-radius: 4px;">Export</a>
+                </div>
+                <div style="margin-top: 20px;margin-left: 15px;margin-right: 15px;">
+
+                    <div class="row" style="background-color: #F9F9F9;border: 1px solid #E1E1E1">
+                        <div id="um_sub_header" class="col-1">Service ID</div>
+                        <div id="um_sub_header" class="col-2">Sevice Date</div>
+                        <div id="um_sub_header" class="col-2">Customer details</div>
+                        <div id="um_sub_header" class="col-1">Service Provider</div>
+                        <div id="um_sub_header" class="col-1">Gross Amount</div>
+                        <div id="um_sub_header" class="col-1">Net Amount</div>
+                        <div id="um_sub_header" class="col-1">Discount</div>
+                        <div id="um_sub_header" class="col-1">Status</div>
+                        <div id="um_sub_header" class="col-1">Payment Status</div>
+                        <div id="um_sub_header" class="col-1">Action</div>
+                    </div>
+                    <div class="row d-flex align-items-center" style="background-color: #FFFFFF;border: 1px solid #E1E1E1;">
+                        <div id="um_sub_items" class="col-1">8472</div>
+                        <div id="um_sub_items" class="col-2">
+                            <div id="time_col" class="row">
+                                <div id="ups_content_items3" class="ups_content_items col-6 col-md-12">
+                                    <img src="images/calendar2.png" alt="" style="margin-right: 5px;z-index: -2;"><b>09/04/2018</b>
+                                </div>
+                                <div id="ups_content_items4" class="ups_content_items col-6 col-md-12">
+                                    <img src="images/layer-712.png" alt="" style="margin-right: 5px;">12:00-18:00
+                                </div>
+                            </div>
+                        </div>
+                        <div id="um_sub_items" class="col-2">
+                            <div id="ups_content_items" style="padding-left: 25px;z-index: -2;" class="ups_content_items">
+                                David Bough
+                            </div>
+                            <div id="ups_content_items6"  class="ups_content_items" style="z-index: -2;">
+                                <img src="images/layer-719.png" alt="" style="margin-right: 5px;">
+                                Musterstrabe 5,12345 Bonn
+                            </div>
+                        </div>
+                        <div id="um_sub_items" class="col-1"></div>
+                        <div id="um_sub_items" class="col-1">100 &#x20AC;</div>
+                        <div id="um_sub_items" class="col-1">100 &#x20AC;</div>
+                        <div id="um_sub_items" class="col-1"></div>
+                        <div id="um_sub_items" class="col-1"><h4 style="font-size: 13px;font-family: 'Roboto',sans-serif;color: #FFFFFF;background-color: #f2bb37;width: fit-content;padding: 9px 10px;">New</h4></div>
+                        <div id="um_sub_items" class="col-1"><h4 style="font-size: 13px;font-family: 'Roboto',sans-serif;color: #FFFFFF;background-color: #FF6B6B;width: fit-content;padding: 9px 10px;">Not Applicable</h4></div>
+                        <div id="um_sub_items" class="col-1">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="images/group-38.png" alt="" style="display: block;margin-left: auto;margin-right: auto;">
+                                </a>
+                              
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li>
+                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" style="font-size: 18px;">Edit & Reshedule</a>
+                                  </li>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Cancel SR by Cust</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Inquiry</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">History log</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Download Invoice</a>
+                                    <a class="dropdown-item" href="#" style="font-size: 18px;">Other Transaction</a>
+                                </ul>
+                              </div>
+                
+                        </div>
+
+                    </div>
+                    <div class="row" style="border: 1px solid #e1e1e1;background-color: #FFFFFF;">
+                        <div id="um_sub_items" class="d-flex col-6">
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;">show</h4> 
+                            <form class="d-flex align-items-center" action="/action_page.php" style="margin-left: 5px;">
+                                <select name="show_entery" id="show_entery" style="padding: 10px;border-radius: 5px;font-size: 14px;">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                </select>
+                            </form>
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;margin-left: 10px;">Entries</h4> 
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-end" >
+                            <a href="#"><img src="images/first-page.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px;margin: 0px 5px;"></a>
+                            <a href="#"><img src="images/keyboard-right-arrow-button-copy.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px 11px;"></a>
+                            <a href="#" style="color: #FFFFFF;background-color: #565656;padding: 6px 12px;margin: 0px 5px;">1</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">2</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">3</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">4</a>
+                            <a href="#" style="color: #646464;padding: 6px 12px;margin: 0px 5px;border: 1px solid #d6d6d6;">5</a>
+                            <a href="#"><img src="images/keyboard-right-arrow-button-copy.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px 11px;transform: rotate(180deg);"></a>
+                            <a href="#"><img src="images/first-page.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px;margin: 0px 5px;transform: rotate(180deg);"></a>
+                        </div>
+                    </div>
+                    <div class=".row" style="margin-left: -15px; margin-top: 25px;margin-bottom: 25px;font-size: 14px;font-family: 'Roboto',sans-serif;">
+                        ©2018 Helperland. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><b>Edit Serviced Request</b></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="date" style="display: block;font-family: 'Roboto',sans-serif;font-weight: bold;">Date</label>
+                        <input type="date" name="date" id="date" style="height: 46px;width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="time" style="display: block;font-family: 'Roboto',sans-serif;font-weight: bold;">Time</label>
+                        <input type="time" name="time" id="time" style="height: 46px;width: 100%;">
+                    </div>
+                </div>
+                <h3 style="font-size: 20px; margin-top: 20px;font-family: 'Roboto',sans-serif;font-weight: bold;">Service Address</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="street_name" style="display: block;font-family: 'Roboto',sans-serif;">Street name</label>
+                        <input type="text" name="street_name" id="street_name" style="height: 46px;width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="house_no" style="display: block;font-family: 'Roboto',sans-serif;">House number</label>
+                        <input type="number" name="house_no" id="house_no" style="height: 46px;width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="postal_code" style="display: block;font-family: 'Roboto',sans-serif;">Postal code</label>
+                        <input type="number" name="postal_code" id="postal_code" style="height: 46px;width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="city" style="display: block;font-family: 'Roboto',sans-serif;">City</label>
+                        <select name="city" id="city" style="height: 46px;width: 100%;">
+                            <option selected disabled>City</option>
+                            <option value="city1">City1</option>
+                            <option value="city2">City2</option>
+                        </select>
+                    </div>
+                </div>
+                <h3 style="font-size: 20px; margin-top: 20px;font-family: 'Roboto',sans-serif;font-weight: bold;">Invoice Address</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="street_name" style="display: block;font-family: 'Roboto',sans-serif;">Street name</label>
+                        <input type="text" name="street_name" id="street_name" style="height: 46px;width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="house_no" style="display: block;font-family: 'Roboto',sans-serif;">House number</label>
+                        <input type="number" name="house_no" id="house_no" style="height: 46px;width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="postal_code" style="display: block;font-family: 'Roboto',sans-serif;">Postal code</label>
+                        <input type="number" name="postal_code" id="postal_code" style="height: 46px;width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="city" style="display: block;font-family: 'Roboto',sans-serif;">City</label>
+                        <select name="city" id="city" style="height: 46px;width: 100%;">
+                            <option selected disabled>City</option>
+                            <option value="city1">City1</option>
+                            <option value="city2">City2</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="why_reshedule" style="font-size: 20px; margin-top: 20px;font-family: 'Roboto',sans-serif;font-weight: bold;">Why do you want to reshedule service request?</label>
+                <textarea name="why_reshedule" id="why_reshedule" placeholder="Why do you want to reshedule service request?" style="width: 100%;height: 100px;"></textarea>
+                <label for="why_reshedule" style="font-size: 20px; margin-top: 20px;font-family: 'Roboto',sans-serif;font-weight: bold;">Call Center EMP Notes</label>
+                <textarea name="why_reshedule" id="why_reshedule" placeholder="Enter Notes" style="width: 100%;height: 70px;"></textarea>
+                <button style="height: 46px;width: 100%;background-color: #1fb6ff;color: #FFFFFF;border-radius: 4px;border: 0;">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="/js/jquery.3.6.0.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
