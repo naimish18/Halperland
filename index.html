@@ -18,43 +18,68 @@
 <body>
   <header class="header">
     <nav class="navbar navbar-expand-lg">
-              
-      <a class="navbar-brand ms-3" href="index.html"><img src="images/logo-large.png" id="logo"  alt=""></a>
+            
+      <a class="navbar-brand ms-3" href="home.html"><img src="images/logo-large.png" id="mylogo"  alt=""></a>
       <button style="color:white; margin-right: 15px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto me-2">
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link active border  border-1 rounded-pill  nav-padding" aria-current="page" href="#" style="width: 161px;height: 40px;text-align: center;">Book a Cleaner</a>
+            <a class="nav-link active border border-1 rounded-pill px-3 nav-padding" aria-current="page" href="#">Book a Cleaner</a>
           </li>
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link nav-padding" href="prices.html">Prices</a>
+            <a class="nav-link nav-padding" href="prices.html">Prices</a>
           </li>
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link nav-padding" href="#">Our Guarantee</a>
+            <a class="nav-link nav-padding" href="#">Our Guarantee</a>
           </li>
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link nav-padding" href="#">Blog</a>
+            <a class="nav-link nav-padding" href="#">Blog</a>
           </li>
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link border border-1 rounded-pill  nav-padding" href="#" style="width: 97px;height: 40px;text-align: center;">Login</a>
+            <button class="nav-link border border-1 rounded-pill px-3 nav-padding" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: transparent;color: #FFFFFF;">Login</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="width: fit-content;display: block;margin-left: auto;margin-right: auto;">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Login to your account</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <input type="email" placeholder="Email                                         &#xf007;" style="font-family:Arial, FontAwesome;margin-left: auto;display: block;margin-right: auto;width: 250px;height: 40px;" >
+                        <input type="password" placeholder="Password                                  &#xf023;" style="font-family:Arial, FontAwesome;padding-right: 2px;margin-top: 15px;display: block;margin-left: auto;margin-right: auto;width: 250px;height: 40px;">
+                        <div class="d-flex align-items-center" style="margin-top: 15px;">
+                          <input type="checkbox" id="remember_me" name="remember_me" style="width: 15px;height: 15px;">
+                          <label for="remember_me" style="color: #111111; margin-left: 5px;">Remember me</label>
+                        </div>
+                        <input class="rounded-pill" type="submit" value="Login" style="margin-top: 15px; width: 250px;height: 40px;background-color: #6DA9B5;border: 0px;color: #FFFFFF;">
+                      </form>
+                      <a href="#"><h4 style="font-family: 'Roboto',sans-serif;font-size: 14px;color: #1d7a8c;margin-top: 20px;text-align: center;">Forgot password?</h4></a>
+                      <h4 style="font-family: 'Roboto',sans-serif;font-size: 14px;text-align: center;">Don't have an account?<a href="user_registration.html"><h4 style="font-size: 14px;font-family: 'Roboto',sans-serif;color: #1d7a8c;display: inline;">Create an account</h4></a></h4>
+                    </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item px-3">
-            <a class="home_nav_items nav-link border border-1 rounded-pill nav-padding" href="#" style="width: 161px;height: 40px;text-align: center;">Become a Helper</a>
+            <a class="nav-link border border-1 rounded-pill px-3 nav-padding" href="become_a_provider.html">Become a Helper</a>
           </li>
-          <li class="home_nav_items nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img style="vertical-align: baseline;" src="images/ic-flag.png" alt="" style="width: 25px;height: 16px;">
+              <img style="vertical-align: baseline;" src="images/ic-flag.png" alt="">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" >
+              <li ><a class="dropdown-item" href="#" ><img src="images/ic-flag.png" alt=""> <span>India</span> </a></li>
               <li><a class="dropdown-item" href="#"><img src="images/ic-flag.png" alt=""> <span>U.K.</span> </a></li>
+              <li><a class="dropdown-item" href="#"><img src="images/ic-flag.png" alt=""> <span>U.S.A.</span> </a></li>
             </ul>
           </li>
         </ul>
       
         </div>
-    </nav>
+  </nav>
 
     <div class="text-center text-lg-start ps-lg-5 col-lg-5 heading">
       <h1 class="mb-3">Lorem, ipsum dolor.</h1>
