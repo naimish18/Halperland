@@ -131,6 +131,13 @@ h6{
     #group_text{
         margin-left: 0;
     }
+    .nav-item{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width:766px){
@@ -572,6 +579,14 @@ h6{
 #l_name{
     margin-left: 14px;
 }
+#reg_passwd,#reg_conf_passwd{
+    display: inline;
+    width: 300px;
+    height: 46px;
+}
+#reg_conf_passwd{
+    margin-left: 14px;
+}
 #phone_num{
     display: inline;
     width: 250px;
@@ -641,6 +656,14 @@ h6{
         border: 1px solid #d4d4d4;
         margin-top: 10px;
     }
+    #reg_passwd,#reg_conf_passwd{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
     #f_name,#l_name{
         display: block;
         width: 300px;
@@ -667,6 +690,14 @@ h6{
 }
 @media screen and (max-width:390px) {
     #f_name,#l_name{
+        display: block;
+        width: 300px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #reg_passwd,#reg_conf_passwd{
         display: block;
         width: 300px;
         height: 46px;
@@ -1058,4 +1089,237 @@ h2{
 } 
 @media screen and (max-width:390px) {
    
+}
+
+/*  user management style */
+
+#admin_header{
+    background-color: #1FB6FF;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+#um_main_content{
+    height: 100%;
+}
+#um_fs_sidebar{
+    height: 100%;
+    position: sticky;
+    left: 0;
+    top: 59px;
+}
+.um_fs_sidebar_items{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    color: #646464;
+    display: block;
+    margin-right: 100px;
+    width: 100%;
+    padding: 15px 0px 20px 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.um_fs_sidebar_items:hover{
+    color: #1fb6ff;
+}
+#um_sub_content{
+    padding-left: 20px;
+    background-color: #f2f4f5;
+    width: 100%;
+    padding-right: 20px;
+    height: 1000px;
+}
+.um_form_ele{
+    color: #a0a0a0;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 46px;
+}
+#um_umame{
+    width: 200px;
+    height: 46px;
+}
+#um_utype{
+    width: 200px;
+    height: 46px;
+}
+#um_sub_header{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    padding: 20px 0px;
+    padding-left: 15px;
+}
+#um_sub_items{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    color: #646464;
+    padding: 20px 0px;
+    padding-left: 15px;
+}
+#um_ss_dropdowm{
+    z-index: 2;
+    display: none;
+}
+@media screen and (max-width:992px) {
+    #um_fs_sidebar{
+        display: none;
+    }
+    #um_ss_dropdowm{
+        display: block;
+    }
+}
+@media screen and (max-width:768px){
+   
+} 
+@media screen and (max-width:390px) {
+   
+}
+
+/* service request style */
+
+#sr_sid{
+    width: 110px;
+    height: 46px;
+}
+#dropdownMenuLink::after{
+    content: none;
+}
+
+/* book service style */
+#bs_main_div{
+    margin-top: 100px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bs_setup_service{
+    background-color: #1D7A8C;
+    border: 1px solid #1D7A8C;
+    border-radius: 0%;
+    
+}
+#bs_setup_service_txt{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-family: 'Roboto',sans-serif;
+    margin: 0px;
+    margin-left: 5px;
+}
+#bs_shedule_plan,#bs_details,#bs_payment{
+    background-color: #F3F3F3;
+    border: 1px solid #646464;
+    border-radius: 0%;   
+}
+#bs_shedule_service_txt,#bs_details_service_txt,#bs_details_payment_txt{
+    color: #646464;
+    font-size: 19px;
+    font-family: 'Roboto',sans-serif;
+    margin: 0px;
+    margin-left: 5px;
+}
+#bs_shedule_down,#bs_details_down,#bs_payment_down{
+    display: none;
+}
+.nav_list{
+    width: 25%;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 18px solid #1D7A8C;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bs_header_txt{
+    font-size: 19px;
+    font-family: 'Roboto',sans-serif;
+}
+#bs_arrow1,#bs_arrow2,#bs_arrow3{
+    transform: rotate(-90deg);
+}
+#bs_border1{
+    padding: 30px 35px;
+    border: 2px solid #646464;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bs_border2{
+    padding: 26px 40px;
+    border: 2px solid #646464;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bs_border3{
+    padding: 37px 27px;
+    border: 2px solid #646464;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bs_border4{
+    padding: 30px 35px;
+    border: 2px solid #646464;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bs_border5{
+    padding: 30px 30px;
+    border: 2px solid #646464;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline_form_labels{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+}
+#inline_form{
+    border: 1px solid #a0a0a0;
+    background-color: #F8F8F8;
+    display: none;
+}
+#select_cc{
+    appearance: none;
+    height: 46px;
+    width: 100%;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+#card_no:focus,#card_date:focus,#cvc:focus{
+    outline: none;
+}
+@media screen and (max-width:1026px) and (min-width:993px){
+    
+}
+@media screen and (max-width:992px) {
+    
+}
+@media screen and (max-width:768px){
+    #bs_side_content{
+        display: none;
+    }
+    #bs_setup_service_txt,#bs_shedule_service_txt,#bs_details_service_txt,#bs_details_payment_txt{
+        display: none;
+    }
+}
+@media screen and (max-width:390px) {
 }
