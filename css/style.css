@@ -189,6 +189,7 @@ h6{
     right: 0;
     background-color: #757575;
     padding: 0!important;
+    z-index: 1;
     /* font-size: 0.7rem!important; */
 }
 #faqnav .nav-item{
@@ -243,6 +244,7 @@ h6{
     left: 50%;
     margin-left: -22px;
     background:white;
+    z-index: 0;
 }
 #faq_logo{
     display: block;
@@ -957,6 +959,7 @@ h2{
 #ups_ss_dropdown_icon::after{
     content: none;
 }
+
 /* #ups_fs_main_content{
     z-index: -1;
 } */
@@ -1032,6 +1035,11 @@ h2{
     }
     #ups_ss_dropdowm{
         display: block;
+    }
+    #ups_content_items6{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-width:390px) {
