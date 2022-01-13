@@ -46,8 +46,8 @@
                 <a href="#" class="um_fs_sidebar_items" style="color: #1fb6ff;">Service Requests</a>
                 <a href="user_management.html" class="um_fs_sidebar_items">User Management</a>
             </div>
-            <div id="um_sub_content">
-                <div class="d-flex align-items-center justify-content-between">
+            <div id="um_sub_content" class="pt-3">
+                <div class="d-flex align-items-center justify-content-between pb-3">
                     <h2>Service Requests</h2>
                     <a href="#" class="d-flex " style="background-color: #1FB6FF;padding: 10px;color: #FFFFFF;border-radius: 4px;"><img src="images/add.png" alt="" style="width: 16px;height: 16px;margin-right: 7px;margin-top: 2px;"> Add New User</a>
                 </div>
@@ -81,8 +81,8 @@
                             <option value="pending_penalty">Pending Penalty</option>
                             <option value="pending_commmision">Pending Commision</option>
                         </select>
-                        <input type="checkbox" class="um_form_ele" id="has_issue" name="remember_me" style="height: 15px;width: 15px;">
-                        <label for="has_issue" style="color: #111111; margin-left: 5px;">Has Issue</label>
+                        
+                        <label for="has_issue" style="color: #111111;margin-left: 10px;display: inline-block;white-space: nowrap;"><input type="checkbox" class="" id="has_issue" name="remember_me" style="vertical-align: middle;width: 15px;height: 15px;"><span style="vertical-align: middle;margin-left: 5px;">Hash Issue</span></label>
                         
                         <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  From Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
                         <input class="um_form_ele" type="datetime" placeholder=" &#xf073;  To Date" style="font-family:Arial, FontAwesome;font-size: 16px;width: 140px;height: 46px;" >
@@ -121,12 +121,12 @@
                             </div>
                         </div>
                         <div id="um_sub_items" class="col-2">
-                            <div id="ups_content_items" style="padding-left: 25px;z-index: -2;" class="ups_content_items">
-                                David Bough
+                            <div id="ups_content_items" style="padding-left: 0px;z-index: -2;" class="ups_content_items">
+                                <h4 class="ups_content_items" style="margin: 0px;padding-left: 26px;">David Bough</h4>
                             </div>
-                            <div id="ups_content_items6"  class="ups_content_items" style="z-index: -2;">
+                            <div id="ups_content_items6"  class="ups_content_items d-flex align-items-start" style="z-index: -2;">
                                 <img src="images/layer-719.png" alt="" style="margin-right: 5px;">
-                                Musterstrabe 5,12345 Bonn
+                                <h4 class="ups_content_items" style="margin: 0px;">Musterstrabe 5,12345 Bonn</h4>
                             </div>
                         </div>
                         <div id="um_sub_items" class="col-1"></div>
@@ -157,8 +157,8 @@
 
                     </div>
                     <div class="row" style="border: 1px solid #e1e1e1;background-color: #FFFFFF;">
-                        <div id="um_sub_items" class="d-flex col-6">
-                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;">show</h4> 
+                        <div id="um_sub_items" class="d-flex align-items-center col-6">
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;margin: 0px;">show</h4> 
                             <form class="d-flex align-items-center" action="/action_page.php" style="margin-left: 5px;">
                                 <select name="show_entery" id="show_entery" style="padding: 10px;border-radius: 5px;font-size: 14px;">
                                 <option value="10">10</option>
@@ -167,7 +167,7 @@
                                 <option value="100">100</option>
                                 </select>
                             </form>
-                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;margin-left: 10px;">Entries</h4> 
+                            <h4 style="font-size: 18px;font-family: 'Roboto',sans-serif;margin: 0px;margin-left: 10px;">Entries</h4> 
                         </div>
                         <div class="col-6 d-flex align-items-center justify-content-end" >
                             <a href="#"><img src="images/first-page.png" alt="" style="border: 1px solid #9c9c9c; padding: 10px;margin: 0px 5px;"></a>
