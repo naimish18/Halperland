@@ -6,7 +6,8 @@ CREATE TABLE `helperland_db`.`user` (
   `user_email` VARCHAR(45) NOT NULL,
   `user_password` VARCHAR(45) NOT NULL,
   `user_type` CHAR(20) NOT NULL,
-  PRIMARY KEY (`user_id`));
+  PRIMARY KEY (`user_id`),
+  UNIQUE INDEX `user_email_UNIQUE` (`user_email` ASC) VISIBLE);
 
 -- customer table
 
@@ -16,7 +17,8 @@ CREATE TABLE `helperland_db`.`customer` (
   `c_lname` CHAR(45) NOT NULL,
   `d_o_b` DATE NOT NULL,
   `mobile_number` INT NOT NULL,
-  PRIMARY KEY (`c_id`));
+  PRIMARY KEY (`c_id`),
+  UNIQUE INDEX `mobile_number_UNIQUE` (`mobile_number` ASC) VISIBLE);
 
 -- service provider table
 
@@ -30,7 +32,8 @@ CREATE TABLE `helperland_db`.`service_provideer` (
   `profile` BLOB NULL,
   `rating` FLOAT NULL,
   `status` TINYINT NOT NULL,
-  PRIMARY KEY (`sp_id`));
+  PRIMARY KEY (`sp_id`),
+  UNIQUE INDEX `phone_number_UNIQUE` (`phone_number` ASC) VISIBLE);
 
 -- address table
 
